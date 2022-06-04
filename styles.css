@@ -1,5 +1,3 @@
-/*General styles*/
-
 * {
     margin: 0;
     padding: 0;
@@ -14,8 +12,12 @@ body {
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #ababab;
+    /* --text-decoration-color: #ff9a00; */
+    --text-decoration-color: #ababab;
+}
+a{
+    text-decoration: none;
 }
 
 .container {
@@ -27,7 +29,7 @@ body {
 .fh {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .fv {
@@ -70,7 +72,6 @@ body {
     }
 }
 
-/*Contact info*/
 .contact-info__header,
 .contact-info__sub-header {
     text-align: center;
@@ -105,9 +106,9 @@ body {
     justify-content: start;
 }
 
-.contact-info__item:not(:last-child) {
+/* .contact-info__item:not(:last-child) {
     margin-bottom: 20px;
-}
+} */
 
 .contact-info__item-icon-wrapper {
     margin-right: 10px;
@@ -127,14 +128,13 @@ body {
 
 .contact-info__avatar {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
-    border: 3px solid;
-    border-color: var(--text-decoration-color);
+    border: 3px;
+    /* border-color: var(--text-decoration-color); */
 }
 
-/*Intro and skills*/
 .intro {
     display: flex;
     justify-content: start;
@@ -167,12 +167,16 @@ body {
     margin-bottom: 15px;
 }
 
-.skills__text {
+
+.skills-box{
+    display: flex;
+    justify-content: space-around;
+}
+.skills-box ul{
     color: var(--secondary-text-color);
-    text-align: justify;
 }
 
-/*Experience and additional info*/
+
 .experiences {
     flex: 1 1 60%;
     margin-right: 50px;
@@ -266,3 +270,17 @@ body {
 .additional-info__languages-item {
     color: var(--secondary-text-color);
 }
+
+/*MODAL STYLES*/
+.basicLightbox--visible .basicLightbox__placeholder{
+    background-color: white;
+    width: 70%;
+    height: 40%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .basicLightbox--visible .basicLightbox__placeholder p{
+
+} */
