@@ -1,5 +1,3 @@
-/*General styles*/
-
 * {
     margin: 0;
     padding: 0;
@@ -70,7 +68,6 @@ body {
     }
 }
 
-/*Contact info*/
 .contact-info__header,
 .contact-info__sub-header {
     text-align: center;
@@ -134,7 +131,6 @@ body {
     border-color: var(--text-decoration-color);
 }
 
-/*Intro and skills*/
 .intro {
     display: flex;
     justify-content: start;
@@ -172,7 +168,6 @@ body {
     text-align: justify;
 }
 
-/*Experience and additional info*/
 .experiences {
     flex: 1 1 60%;
     margin-right: 50px;
