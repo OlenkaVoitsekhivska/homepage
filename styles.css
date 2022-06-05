@@ -16,7 +16,8 @@ body {
     /* --text-decoration-color: #ff9a00; */
     --text-decoration-color: #ababab;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -95,6 +96,12 @@ a{
     justify-content: space-between;
 }
 
+.contact-info__block.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .contact-info__block--center {
     justify-content: center;
 }
@@ -106,9 +113,6 @@ a{
     justify-content: start;
 }
 
-/* .contact-info__item:not(:last-child) {
-    margin-bottom: 20px;
-} */
 
 .contact-info__item-icon-wrapper {
     margin-right: 10px;
@@ -132,7 +136,6 @@ a{
     height: 200px;
     object-fit: cover;
     border: 3px;
-    /* border-color: var(--text-decoration-color); */
 }
 
 .intro {
@@ -163,16 +166,16 @@ a{
 
 .skills__header {
     color: var(--secondary-text-color);
-    text-align: center;
     margin-bottom: 15px;
 }
 
 
-.skills-box{
+.skills-box {
     display: flex;
     justify-content: space-around;
 }
-.skills-box ul{
+
+.skills-box ul {
     color: var(--secondary-text-color);
 }
 
@@ -226,7 +229,7 @@ a{
     padding-left: 20px;
 }
 
-.experiences__company-project-responsibilities li{
+.experiences__company-project-responsibilities li {
     list-style-type: square;
 }
 
@@ -275,16 +278,70 @@ a{
     color: var(--secondary-text-color);
 }
 
-/*MODAL STYLES*/
-.basicLightbox--visible .basicLightbox__placeholder{
-    background-color: white;
-    width: 70%;
-    height: 40%;
-    border-radius: 8px;
+.hobbies__header {
+    color: var(--secondary-text-color);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.hobbiesList {
     display: flex;
+    justify-content: space-between;
+}
+
+.hobbiesList li {
+    flex-basis: 30%;
+    list-style-type: none;
+    transition: transform 0.5s linear 0.1s;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.hobbiesList img{
+    width:100%;
+    height:200px;
+}
+
+.overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+
+
+}
+
+.hobbiesList li:hover {
+
+    transform: scale(1.3);
+}
+
+.hobbiesList li:hover .overlay {
+    z-index: 3;
+    display: block;
+
+
+}
+
+.overlay-text {
+    width: 100%;
+    height: 100%;
+    background-color: #6a737dab;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    display: flex;
+
     justify-content: center;
     align-items: center;
 }
-/* .basicLightbox--visible .basicLightbox__placeholder p{
 
-} */
