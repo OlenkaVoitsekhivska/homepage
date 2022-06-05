@@ -226,6 +226,10 @@ a{
     padding-left: 20px;
 }
 
+.experiences__company-project-responsibilities li{
+    list-style-type: square;
+}
+
 .additional-info {
     flex: 1 1 40%;
 }
